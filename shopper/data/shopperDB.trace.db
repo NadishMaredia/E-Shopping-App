@@ -1,0 +1,3 @@
+2025-03-03 20:45:24.485094-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORY" not found; SQL statement:
+select c1_0.category_id,c1_0.category_name from category c1_0 [42102-232]
