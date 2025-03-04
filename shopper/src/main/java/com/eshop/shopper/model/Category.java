@@ -17,4 +17,5 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long categoryId;
     private String categoryName;
+    //adding comments to test yml
 }
