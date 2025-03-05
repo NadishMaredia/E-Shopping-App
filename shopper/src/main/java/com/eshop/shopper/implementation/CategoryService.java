@@ -1,5 +1,7 @@
 package com.eshop.shopper.implementation;
 
+import com.eshop.shopper.exceptions.APIException;
+import com.eshop.shopper.exceptions.ResourceNotFoundException;
 import com.eshop.shopper.model.Category;
 import com.eshop.shopper.repository.ICategoryRepository;
 import com.eshop.shopper.service.ICategoryService;
@@ -22,18 +24,22 @@ public class CategoryService implements ICategoryService {
     private ICategoryRepository categoryRepository;
     @Override
     public List<Category> getAllCategories() {
-        return categoryRepository.findAll();
+        List<Category> categories = categoryRepository.findAll();
+        if(categories.isEmpty()) throw new APIException("No category created till now");
+        return categories;
     }
 
     @Override
     public void createCategory(Category category) {
+        Category savedCategory = categoryRepository.findByCategoryName(category.getCategoryName());
+        if(savedCategory != null) throw new APIException("Category with the name " +category.getCategoryName() + " already exists");
         categoryRepository.save(category);
     }
 
     @Override
     public String deleteCategory(Long categoryId) {
         Category category = categoryRepository.findById(categoryId)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Category not found")) ;
+                .orElseThrow(() -> new ResourceNotFoundException("Category", "categoryId", categoryId)) ;
 
         categoryRepository.delete(category);
 
@@ -44,7 +50,7 @@ public class CategoryService implements ICategoryService {
     public Category updateCategory(Category category, Long categoryId) {
         Optional<Category> categories = categoryRepository.findById(categoryId);
 
-        Category savedCategory = categories.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Resource not found"));
+        Category savedCategory = categories.orElseThrow(() -> new ResourceNotFoundException("Category", "categoryId", categoryId));
         savedCategory.setCategoryId(categoryId);
 
         savedCategory = categoryRepository.save(savedCategory);
