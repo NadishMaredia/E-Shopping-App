@@ -1,3 +1,98 @@
 2025-03-03 20:45:24.485094-05:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORY" not found; SQL statement:
 select c1_0.category_id,c1_0.category_name from category c1_0 [42102-232]
+2025-03-05 15:34:08.696048-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]- TRUNCATING TABLES:\000d\000aTRUNCATE TABLE categories"; SQL statement:
+- TRUNCATING TABLES:
+TRUNCATE TABLE categories [42000-232]
+2025-03-05 15:34:08.709080-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+-- SAMPLE DATA:
+INSERT INTO categories (category_id, category_name) VALUES (1, 'Mens T-Shirts') [42102-232]
+2025-03-05 15:34:08.712048-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (2, 'Smartphones') [42102-232]
+2025-03-05 15:34:08.713049-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (3, 'Apparel') [42102-232]
+2025-03-05 15:34:08.715051-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (4, 'Home Appliances') [42102-232]
+2025-03-05 15:34:08.716048-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (5, 'Toys') [42102-232]
+2025-03-05 15:34:08.717049-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (6, 'Furniture') [42102-232]
+2025-03-05 15:34:08.719048-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (7, 'Books') [42102-232]
+2025-03-05 15:34:08.721049-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (8, 'Sports Equipment') [42102-232]
+2025-03-05 15:34:08.722048-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (9, 'Beauty Products') [42102-232]
+2025-03-05 15:34:08.723049-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (10, 'Automotive') [42102-232]
+2025-03-05 15:34:08.724052-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (11, 'Outdoor Gear') [42102-232]
+2025-03-05 15:34:08.725051-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (12, 'Electronics') [42102-232]
+2025-03-05 15:34:08.726048-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (13, 'Kitchen Appliances') [42102-232]
+2025-03-05 15:34:08.726048-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (14, 'Baby Products') [42102-232]
+2025-03-05 15:34:08.727050-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (15, 'Health & Fitness') [42102-232]
+2025-03-05 15:34:08.728050-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (16, 'Garden & Outdoor') [42102-232]
+2025-03-05 15:34:08.729048-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (17, 'Pet Supplies') [42102-232]
+2025-03-05 15:34:08.730047-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (18, 'Office Supplies') [42102-232]
+2025-03-05 15:34:08.731050-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (19, 'Jewelry & Watches') [42102-232]
+2025-03-05 15:34:08.731050-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (20, 'Travel & Luggage') [42102-232]
+2025-03-05 15:34:08.732050-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (21, 'Musical Instruments') [42102-232]
+2025-03-05 15:34:08.733049-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (22, 'Crafts & Hobbies') [42102-232]
+2025-03-05 15:34:08.734047-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (23, 'Collectibles & Memorabilia') [42102-232]
+2025-03-05 15:34:08.735047-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (24, 'Art & Decor') [42102-232]
+2025-03-05 15:34:08.737046-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (25, 'Food & Beverages') [42102-232]
+2025-03-05 15:34:08.738047-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (26, 'Stationery & Gift Wrapping') [42102-232]
+2025-03-05 15:34:08.738047-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (27, 'Electrical & Lighting') [42102-232]
+2025-03-05 15:34:08.739046-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (28, 'DIY & Tools') [42102-232]
+2025-03-05 15:34:08.740046-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (29, 'Party Supplies') [42102-232]
+2025-03-05 15:34:08.741047-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIES" not found; SQL statement:
+INSERT INTO categories (category_id, category_name) VALUES (30, 'Educational Toys') [42102-232]
