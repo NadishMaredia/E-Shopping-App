@@ -1,11 +1,10 @@
 package com.eshop.shopper.service;
 
-import com.eshop.shopper.model.Product;
 import com.eshop.shopper.payload.ProductDTO;
 import com.eshop.shopper.payload.ProductResponse;
 
 public interface IProductService {
-    ProductDTO addProduct(Long categoryId, Product product);
+    ProductDTO addProduct(Long categoryId, ProductDTO productDTO);
 
     ProductResponse getAllProducts();
     ProductDTO getProductById(Long productId);
@@ -14,7 +13,7 @@ public interface IProductService {
 
     ProductResponse searchProductByKeyword(String keyword);
 
-    ProductDTO updateProduct(Long productId, Product product);
+    ProductDTO updateProduct(Long productId, ProductDTO productDTO);
 
     ProductDTO deleteProduct(Long productId);
 }
