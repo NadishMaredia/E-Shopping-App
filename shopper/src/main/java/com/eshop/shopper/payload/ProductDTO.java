@@ -1,36 +1,24 @@
-package com.eshop.shopper.model;
+package com.eshop.shopper.payload;
 
-import jakarta.persistence.*;
-
-@Entity
-public class Product {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class ProductDTO {
     private Long productId;
     private String productName;
     private String image;
-    private String description;
     private Integer quantity;
     private double price;
     private double discount;
     private double specialPrice;
 
-    @ManyToOne
-    @JoinColumn(name = "category_id")
-    private Category category;
+    public ProductDTO() {}
 
-    public Product() {}
-
-    public Product(Long productId, String productName, String image, String description, Integer quantity, double price, double discount, double specialPrice, Category category) {
+    public ProductDTO(Long productId, String productName, String image, Integer quantity, double price, double discount, double specialPrice) {
         this.productId = productId;
         this.productName = productName;
         this.image = image;
-        this.description = description;
         this.quantity = quantity;
         this.price = price;
         this.discount = discount;
         this.specialPrice = specialPrice;
-        this.category = category;
     }
 
     public Long getProductId() {
@@ -49,12 +37,12 @@ public class Product {
         this.productName = productName;
     }
 
-    public String getDescription() {
-        return description;
+    public String getImage() {
+        return image;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public Integer getQuantity() {
@@ -73,22 +61,6 @@ public class Product {
         this.price = price;
     }
 
-    public double getSpecialPrice() {
-        return specialPrice;
-    }
-
-    public void setSpecialPrice(double specialPrice) {
-        this.specialPrice = specialPrice;
-    }
-
-    public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
-    }
-
     public double getDiscount() {
         return discount;
     }
@@ -97,11 +69,11 @@ public class Product {
         this.discount = discount;
     }
 
-    public String getImage() {
-        return image;
+    public double getSpecialPrice() {
+        return specialPrice;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setSpecialPrice(double specialPrice) {
+        this.specialPrice = specialPrice;
     }
 }
